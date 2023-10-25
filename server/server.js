@@ -11,12 +11,10 @@ app.use(express.json())
 app.use(cookieParser())
 
 
-app.use('/api/v2',router)
+app.use('/api/v2', router)
 
 dbConnect()
 
-
-
-app.listen(process.env.PORT, ()=>{
+app.listen(process.env.PORT, () => {
     console.log("Server Started Successfully")
 })

@@ -13,6 +13,9 @@ export const Navbar = () => {
     setIsOpen(!isOpen)
   }
 
+
+
+
   return (
     <div className='bg-[#101728] fixed z-20 w-screen py-3 border-b-2 border-gray-800 backdrop-blur-md backdrop-brightness-105 bg-transparent'>
       <div className='w-11/12 mx-auto flex justify-between items-center'>
@@ -23,7 +26,7 @@ export const Navbar = () => {
         </div>
 
         {/* for nav links */}
-        <div className={`lg:flex gap-4 font-sans text-white items-center text-[18px] transition-all ${isOpen? 'flex' : 'hidden'}`}>
+        <div className={`lg:flex gap-4 font-sans text-white items-center text-[18px] transition-all ${isOpen ? 'flex' : 'hidden'}`}>
           {NavbarLinks.map((item, index) => (
             <div key={index} className='hover:text-[#8b6acf] hover:scale-95'>
               <Link to={item.path}>{item.title}</Link>

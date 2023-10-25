@@ -25,11 +25,7 @@ const userSchema = new mongoose.Schema({
       lists: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'EmailList'
-      }],
-    role:{
-        type: String,
-        role:['Admin','User']
-    },
+      }]
 })
 
 module.exports = mongoose.model('User', userSchema)

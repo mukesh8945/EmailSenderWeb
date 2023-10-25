@@ -1,14 +1,6 @@
 # Sendyy - Bulk Email Sender
 
-
-![Screenshot 2023-10-05 211531](https://github.com/sandy088/sendyy-Bulk-Email-Sender/assets/90024312/63df8384-7f1a-4fa4-b214-e204b63869ca)
-
 Sendyy is a powerful bulk email-sending application built with React.js, ContextAPI, Node.js, Express.js, MongoDB, Cloudinary, JWT Auth, and TailwindCSS.
-
-
-https://github.com/sandy088/sendyy-Bulk-Email-Sender/assets/90024312/43375cfa-e92a-4bd3-9b63-e5d3feb72f60
-
-
 
 ## Features
 
@@ -30,4 +22,3 @@ https://github.com/sandy088/sendyy-Bulk-Email-Sender/assets/90024312/43375cfa-e9
 - **Cloudinary**: A cloud-based media management platform for handling image and file uploads.
 - **JWT Auth**: JSON Web Tokens for secure authentication and authorization.
 - **TailwindCSS**: A utility-first CSS framework for rapid UI development.
-

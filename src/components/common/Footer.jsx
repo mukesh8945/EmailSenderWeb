@@ -9,15 +9,18 @@ export function FooterFour() {
           <div className="w-full p-6 md:w-1/2 lg:w-5/12">
             <div className="flex h-full flex-col justify-between">
               <div className="mb-4 inline-flex items-center text-white">
-                <img src={SendyyLogos} alt='sendyy logo' loading='lazy' height={40} width={40}/>
+                <img src={SendyyLogos} alt='sendyy logo' loading='lazy' height={40} width={40} />
                 <span className="ml-4 text-lg font-bold text-white">Sendyy</span>
               </div>
+
+
               <div>
                 <p className="mb-4  text-base font-medium text-white">Free Bulk E-mail Sender</p>
                 <p className="text-sm text-gray-400">
-                  &copy; Copyright 2022. All Rights Reserved by Sendyy-free Bulk Email Sender.
+                  &copy; Copyright 2024 . All Rights Reserved by Sendyy-free Bulk Email Sender.
                 </p>
               </div>
+
             </div>
           </div>
           <div className="w-full p-6 md:w-1/2 lg:w-2/12">

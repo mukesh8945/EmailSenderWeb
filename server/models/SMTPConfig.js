@@ -12,11 +12,11 @@ const smtpConfigSchema = new mongoose.Schema({
   },
   port: {
     type: Number,
-   
+
   },
   secure: {
     type: Boolean,
-    
+
   },
   user: {
     type: String,

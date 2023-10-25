@@ -1,4 +1,4 @@
-/* .App {
+.App {
   text-align: center;
 }
 
@@ -32,11 +32,11 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
-} */
-
+}
 
 .spinner {
   width: 11.2px;
@@ -48,10 +48,9 @@
 
 @keyframes spinner-z355kx {
   to {
-     transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
 
 .gradient-text {
   font-size: 24px;
@@ -60,11 +59,10 @@
   -webkit-text-fill-color: transparent;
 }
 
-
 @import url("https://fonts.googleapis.com/css?family=Raleway:400");
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @property --angle {
@@ -84,7 +82,6 @@
   initial-value: 0%;
   inherits: true;
 }
-
 
 
 /* p {
@@ -112,13 +109,13 @@
   background: linear-gradient(0deg, #000, #272727); */
 }
 
-.check:before, .check:after {
+.check:before,
+.check:after {
   content: '';
   position: absolute;
-  
   left: -2px;
   top: -2px;
-  background: linear-gradient(45deg, #9b37ff, #000, #5d00ff,#000, #000);
+  background: linear-gradient(45deg, #9b37ff, #000, #5d00ff, #000, #000);
   background-size: 400%;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
@@ -131,9 +128,11 @@
   0% {
     background-position: 0 0;
   }
+
   50% {
     background-position: 400% 0;
   }
+
   100% {
     background-position: 0 0;
   }
