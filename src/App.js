@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Homepage from './Pages/Homepage';
 import { Navbar } from './components/common/Navbar';
-import  PrivateRoute  from './components/Auth/PrivateRoute';
+import PrivateRoute from './components/Auth/PrivateRoute';
 import { Dashboard } from './Pages/Dashboard';
 import { SetupSmtp } from './components/Dashboard/SetupSmtp';
 import { CreateEmailList } from './components/Dashboard/CreateEmailList';
@@ -28,46 +28,46 @@ function App() {
     <div className="App overflow-x-hidden bg-[#101728] overflow-y-scroll h-screen">
       <Navbar />
 
-        <Routes>
-          <Route path='/' element={<Homepage />} />
-          {/* <Route path='/signup' element={<AuthPage isLogin={false}/>} /> */}
-          <Route path='/signup' element={<SignUpThree/>} />
-          {/* <Route path='/login' element={<AuthPage isLogin={true}/>} /> */}
-          <Route path='/login' element={<SignUpThree isLogin={true}/>} />
-          <Route element={
-            <PrivateRoute>
-              <Dashboard/>
-            </PrivateRoute>
-          }>
-            <Route path='dashboard/stats' element={<Statsdash/>}/>
-            <Route path='dashboard/setupsmtp' element={<SetupSmtp/>}/>
-            <Route path='dashboard/create-email-list' element={<CreateEmailList/>}/>
-            <Route path='dashboard/emails-list' element={<EmailsList/>}/>
-            <Route path='dashboard/send-mail' element={<SendMail/>}/>
-            <Route path= 'dashboard/how-to-use' element={<Howto2/>}/>
-          </Route>
+      <Routes>
+        <Route path='/' element={<Homepage />} />
+        {/* <Route path='/signup' element={<AuthPage isLogin={false}/>} /> */}
+        <Route path='/signup' element={<SignUpThree />} />
+        {/* <Route path='/login' element={<AuthPage isLogin={true}/>} /> */}
+        <Route path='/login' element={<SignUpThree isLogin={true} />} />
+        <Route element={
+          <PrivateRoute>
+            <Dashboard />
+          </PrivateRoute>
+        }>
+          <Route path='dashboard/stats' element={<Statsdash />} />
+          <Route path='dashboard/setupsmtp' element={<SetupSmtp />} />
+          <Route path='dashboard/create-email-list' element={<CreateEmailList />} />
+          <Route path='dashboard/emails-list' element={<EmailsList />} />
+          <Route path='dashboard/send-mail' element={<SendMail />} />
+          <Route path='dashboard/how-to-use' element={<Howto2 />} />
+        </Route>
 
 
-          <Route element={
-            <AdminRoute>
-              <Admin/>
-            </AdminRoute>
-          }>
+        <Route element={
+          <AdminRoute>
+            <Admin />
+          </AdminRoute>
+        }>
 
-            <Route path='admin/stats' element={<Stats/>}></Route>
-            <Route path='admin/users' element={<Users/>}></Route>
-            <Route path='admin/top-users' element={<TopUsers/>}></Route>
+          <Route path='admin/stats' element={<Stats />}></Route>
+          <Route path='admin/users' element={<Users />}></Route>
+          <Route path='admin/top-users' element={<TopUsers />}></Route>
 
-          </Route>
+        </Route>
 
-          <Route path='/pricing' element={<Pricing/>}/>
-          <Route path='/contact-us' element={<ContactPage/>}/>
-          <Route path= '/how-to-use' element={<Howto2/>}/>
+        <Route path='/pricing' element={<Pricing />} />
+        <Route path='/contact-us' element={<ContactPage />} />
+        <Route path='/how-to-use' element={<Howto2 />} />
 
-          <Route path='*' element={<ErrorFour/>}/>
-        </Routes>
+        <Route path='*' element={<ErrorFour />} />
+      </Routes>
 
-        
+
 
     </div>
   );
